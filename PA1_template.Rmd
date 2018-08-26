@@ -33,7 +33,7 @@ stepsperday <- tapply(data$steps, data$date, sum, na.rm = TRUE)
 library(ggplot2)
 qplot(stepsperday, xlab = "No. of Steps Taken Each Day", ylab = "Total Frequency", binwidth = 500)
 ```
-```{r, cache = TRUE}
+```{r, cache = TRUE} 
 medianperday <- median(stepsperday)
 meanperday <- mean(stepsperday)
 ```
